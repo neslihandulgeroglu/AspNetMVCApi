@@ -23,7 +23,7 @@ namespace AspNetMVCApi_PL.Controllers
         {
             _studentService = studentService;
         }
-
+         [System.Web.Http.Route("")]
         // GET api/<controller>
         public ResponseData GetAllStudents()
         {
@@ -34,7 +34,7 @@ namespace AspNetMVCApi_PL.Controllers
             } 
             catch (Exception ex)
             {
-                // ex loglanabilir
+              
                 return new ResponseData()
                 {
                     IsSuccess=false,
